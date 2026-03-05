@@ -1,0 +1,58 @@
+.duration{
+	display: flex;
+}
+
+.form-item {
+    margin-bottom: 16px;
+}
+
+label {
+    font-weight: 500;
+    color: #0056b3;
+    margin-bottom: 4px;
+}
+
+.form-item input {
+	border-top-right-radius: 6px;
+	border-bottom-right-radius: 6px;
+    border-color: #0056b3;
+}
+
+.form-item select {
+    border-color: #0056b3;
+}
+
+.form-item textarea {
+    border-color: #0056b3;
+}
+
+.form-container button {
+    font-weight: 500;
+}
+
+
+.input-group {
+	margin-bottom: 16px;
+}
+.input-group input {
+	border-top-right-radius: 6px;
+	border-bottom-right-radius: 6px;
+    border-color: #0056b3;
+}
+.input-group .form-control {
+	border-top-right-radius: 6px;
+	border-bottom-right-radius: 6px;
+    border-color: #0056b3;
+}
+.input-group .is-invalid {
+	border-color: var(--bs-form-invalid-color);
+}
+.input-group select {
+    border-color: #0056b3;
+}
+.input-group textarea {
+    border-color: #0056b3;
+}
+.form-container button {
+    font-weight: 500;
+}

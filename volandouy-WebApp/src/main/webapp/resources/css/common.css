@@ -1,0 +1,153 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.search-form {
+    flex-grow: 1;
+    max-width: 500px;
+}
+
+.profile-picture {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-dropdown {
+    position: relative;
+}
+.profile-dropdown .dropdown-menu {
+    margin-top: 0;
+    padding-top: 0;
+}
+.profile-dropdown .dropdown-toggle::after {
+    display: none;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+}
+.profile-header .profile-name {
+    margin-left: 0.5rem;
+    font-weight: bold;
+}
+
+.dropdown-toggle {
+    text-decoration: none;
+}
+
+
+/**
+ * Navbar
+ */
+.navbar-toggler {
+    padding: 0.25rem 0.5rem;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+    
+.navbar-toggler-icon {
+    background-image: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-toggler-icon::before {
+    content: '\2630';
+    color: #0d6efd;
+    font-size: 1.25rem;
+    line-height: 1;
+    display: block;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+
+/**
+ * Left side menu
+ */
+.left-side-menu {
+    background-color: var(--bs-tertiary-bg);
+    padding: 1rem;
+    border-radius: 0.25rem;
+    margin-bottom: 1rem;
+}
+.left-side-menu h2 {
+    color: var(--bs-emphasis-color);
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+.left-side-menu ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+.left-side-menu li {
+    font-size: 15px;
+    margin-bottom: 0.5rem;
+}
+.left-side-menu ul li a {
+    color: var(--bs-primary-text);
+    text-decoration: none;
+}
+
+
+/**
+ * Media
+ */
+
+@media (max-width: 991.98px) {
+    .navbar-brand {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .navbar-toggler {
+        order: -1;
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar-nav {
+        justify-content: center;
+    }
+
+    .search-form-container {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        order: 2;
+    }
+
+    .navbar-nav.left-menu {
+        order: 1;
+    }
+
+    .navbar-nav.right-menu {
+        order: 3;
+    }
+
+    .nav-item .nav-link {
+        margin-top: 5px;
+        margin-left: 4px;
+    }
+}
